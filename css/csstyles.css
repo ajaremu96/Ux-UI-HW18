@@ -1,0 +1,21 @@
+.myWork {
+    display: grid;
+  }
+  
+  .workGrid {
+    display: grid;
+    grid-template-areas:
+      "cosMeetImg cosMeetDetails"
+      "chsImg chsDetails";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  .workImage {
+    grid-area:cosMeetImg / chsImg;
+  }
+  
+  .workDetails {
+    grid-area: cosMeetDetails / chsDetails;
+  }
